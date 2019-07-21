@@ -4,6 +4,7 @@ import ImageTile from "./components/ImageTile";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import data from "./data.json";
+import "./components/ImageTile.css";
 
 class App extends React.Component {
   state = {
@@ -24,7 +25,7 @@ class App extends React.Component {
     if(val.clicked){
       console.log("You have already clicked this image!")
     } else {
-      val.clicked = true
+      val.clicked = 1
     }
   }
 

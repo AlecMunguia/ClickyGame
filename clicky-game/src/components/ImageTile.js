@@ -1,4 +1,5 @@
 import React from "react";
+import "./ImageTile.css"
 
  function ImageTile(props) {
      /*
@@ -14,7 +15,7 @@ import React from "react";
     }
      */
      return (
-         <div onClick={()=>props.handleClick(props.item)}>
+         <div className = 'ImageTile' onClick={()=>props.handleClick(props.item)}>
              <img src={props.item.image} alt="puppy"></img>
          </div>
      )
