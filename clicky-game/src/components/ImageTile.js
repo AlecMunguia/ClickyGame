@@ -1,7 +1,7 @@
 import React from "react";
 import "./ImageTile.css"
 
- function ImageTile(props) {
+ const ImageTile = (props) => (
      /*
     props = {
         item: this.state.data[index],
@@ -14,12 +14,12 @@ import "./ImageTile.css"
         clicked: this.clicked
     }
      */
-     return (
-         <div className = 'ImageTile' onClick={()=>props.handleClick(props.item)}>
-             <img src={props.item.image} alt="puppy"></img>
+     
+         <div className = 'ImageTile' onClick={props.handleClick}>
+             <img alt = {props.image.replace(".jpg", "")} src={props.image} />
          </div>
      )
- }
+ 
 
 // function ImageTile({ item, handleClick }) {
 //   return (
